@@ -1,0 +1,7 @@
+{% if site.image %}
+<div class="material-cover animated fade-in" style="background-image: url({{site.image}})">
+{% else %}
+<div class="material-cover" style="background-image: url({{site.cover}})">
+{% endif %}
+    <div class="background-container"></div>
+</div>

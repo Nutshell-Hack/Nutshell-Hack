@@ -1,0 +1,44 @@
+<aside class="cover animated" style="background-image: url({{site.cover}})">
+<div class="background-container">
+    <div class="profile">
+        <header id="aside-header" class="nav-header mobile">
+            <a id="aside-close-button" class="open-link right">
+                <i class="fa fa-close"></i>
+            </a>
+        </header>
+        {% if site.logo %}
+        <div class="profile-logo">
+            <a id="avatar-link" class="open-link" title="Link to homepage for {{site.title}}" href="{{site.url}}#open">
+                <img src="{{site.logo}}" alt="{{site.title}} avatar" class="avatar rounded hvr-buzz-out" />
+            </a>
+        </div>
+        {% endif %}
+        <div class="profile-header">
+            <a class="open-link" title="Link to homepage for {{site.title}}" href="{{site.url}}#open">
+                <h1 class="profile-title">{{site.title}}</h1>
+            </a>
+        </div>
+        <div class="profile-body">
+            <a class="open-link" title="Link to homepage for {{site.title}}" href="{{site.url}}#open">
+                <h3 id="profile-resume"></h3>
+            </a>
+            <hr class="divider long" />
+            <p>{{site.description}}</p>
+            <hr class="divider short" />
+            <div class="call-to-action-container">
+                
+               {% include navigation.html %}
+
+            </div>
+        </div>
+        {% include social.html %}
+    </div>
+</div>
+</aside>
+
+<div class="blog-header">
+    <a title="Link to homepage for {{site.title}}" href="{{site.url}}#open">
+        <h1 class="profile-title hvr-float">{{site.title}}</h1>
+    </a>
+    {% include navigation.html %}
+</div>

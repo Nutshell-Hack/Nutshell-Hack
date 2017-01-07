@@ -1,0 +1,13 @@
+<nav class="navigation">
+    <ul class="links">
+        <li class="nav-blog {% if page.url == link.url %} nav-current {% endif %}">
+            <a class="home-link" href="{{site.url}}#open" title="{{site.title}} blog">Home</a>
+        </li>
+        <li class="nav-about {% if page.url == link.url %} nav-current {% endif %}">
+            <a href="/about.html#open">About</a>
+        </li>      
+        <li class="subscribe-button nav-blog hide {% if page.url == link.url %} nav-current {% endif %}">
+            <a class="subscribe-link" href="{{site.url}}#open" title="subscribe">Blog</a>
+        </li>
+    </ul>
+</nav>

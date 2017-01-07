@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--[if lte IE 9]>
+        <script type="text/javascript">
+            window.location = "/browser-compatibility";
+        </script>
+        <![endif]-->
+    <title> {{page.title}}</title>
+
+    {% include meta.html %}
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/caffeine-theme.css" /> 
+    {% include head-css.html %} {% include ghost_head.html %} {% include headscript.html %}
+</head>
+
+<body class="{{page.body_class}}">
+    {% include header.html %} {% include aside.html %}
+
+    <main class="animated">
+        <section class="content">
+
+            {{content}} 
+
+            {% include footer.html %}
+        </section>
+    </main>
+
+    {% include tags-overlay.html %} {% include ghost_foot.html %}
+
+    <script src="./assets/js/caffeine-theme.js" type="text/javascript" charset="utf-8"></script>
+
+    <!--{% include google-analytics.html %} 
+    {% include disqus-comment-count.html %}-->
+
+</body>
+
+</html>
