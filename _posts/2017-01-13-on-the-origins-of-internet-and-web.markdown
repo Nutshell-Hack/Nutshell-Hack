@@ -8,10 +8,11 @@ layout: post
 body_class: home-template
 post_class: post tag-career tag-productivity tag-musings tag-data
 image_path: https://res.cloudinary.com/iglesk/image/upload/v1484330918/net.jpg
-description: This is going to be an article or series of articles that summarizes my humble explanations and findings on the two of the most influential topics of our time, Internet and Web...
+description: This is going to be an article or series of articles that summarizes
+  my humble explanations and findings on the two of the most influential topics of
+  our time, Internet and Web...
 comments: true
 ---
-
 
 This is going to be an article or series of articles that summarizes my humble explanations and findings on the two of the most influential topics of our time, Internet and Web...
 
