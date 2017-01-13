@@ -5,7 +5,7 @@ layout: default
   <article class="{{page.post_class}}">
     {% include material-cover.html %}
     <div class="post-card animated fade-in">
-        <a id="back-button" href="#open" title="Go back" class="hvr-grow">
+        <a id="back-button" href="{{site.url}}#open" title="Go back" class="hvr-grow">
             <div class="back-button">
                 <i class="fa fa-arrow-left"></i>
             </div>
@@ -27,7 +27,7 @@ layout: default
              <div class="post-content">
                 {{content}}
             </div>
-           {% include comments.html %}
+           <!--{% include comments.html %}-->
         </div>
     </div>
     {% include post-pagination.html %}

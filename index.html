@@ -1,37 +1,36 @@
----
-title: Home Page
-layout: default
-body_class: home-template
----
-
+--- 
+title: Home Page 
+layout: default 
+body_class: home-template 
+--- 
 {% include material-cover.html %}
 
 <div class="page page-index container-wrapper">
     <ol class="posts">
 
-   {% for post in site.posts %}
+        {% for post in site.posts %}
         <li class="card">
             <div class="card-container">
                 <div class="card-body">
                     <a href="{{post.url}}#open" title="link to {{post.title}}">
                 <div class="material-cover " style="background-image: url({{post.image_path}})"></div>
-        <div class="card-content">
-        <h2>{{post.title}}</h2>
-        <p class="description">{{post.description}} &hellip;</p>
-        </div>
-                    </a>
-        </div>
-        <div class="card-footer">
-        <div class="meta">
-        <time datetime="January 06, 2017">{{post.post_date}}</time>
+<div class="card-content">
+    <h2>{{post.title}}</h2>
+    <p class="description">{{post.description}} &hellip;</p>
+</div>
+</a>
+</div>
+<div class="card-footer">
+    <div class="meta">
+        <time datetime="{{post.date | date_to_long_string}}">{{post.date | date_to_long_string}}</time>
         <span class="tags">on <a href="/tag/career/">Career</a> <a href="/tag/productivity/">Productivity</a> <a href="/tag/musings/">Musings</a> <a href="/tag/data/">Data</a></span>
                 - <a href="{{post.url}}#open">Comments</a>
-        </div>
-        <div class="clear"></div>
-        </div>
-        </div>
-       </li>
-    {% endfor %}
+    </div>
+    <div class="clear"></div>
+</div>
+</div>
+</li>
+{% endfor %}
 
 
 </ol>
