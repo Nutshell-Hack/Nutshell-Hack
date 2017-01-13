@@ -4,6 +4,7 @@ date: 2017-01-13 11:10:00 Z
 tags:
 - internet
 - web
+layout: post
 ---
 
 ![vbwwhp78-1394632065.jpg](/uploads/vbwwhp78-1394632065.jpg)
