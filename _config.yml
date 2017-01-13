@@ -1,8 +1,27 @@
 url: /index.html
-title: OSabekZ
+title: Nutshell Hack
 cover: https://s3-us-west-2.amazonaws.com/caffeine-coding-bucket/2016/11coffee_background_blur_min_1457314092921-1479086063660.jpg
-logo: https://caffeine-coding-bucket.s3.amazonaws.com/2016/Mar/Kelvin_min-1457599406253.jpg
-description: Engineering thoughts, stories and ideas. I am a young software engineer in the Silicon Valley and I hope to share
-                my notes, journey, and lessons with my fellow yuppies. 
+avatar: https://caffeine-coding-bucket.s3.amazonaws.com/2016/Mar/Kelvin_min-1457599406253.jpg
+description: Nutshell Hack is A Staccato Of Random Engineering thoughts, stories and ideas... <br>Snowballed Into A Single blog where we hope to share our notes, journey, and lessons with our fellow yuppies.
 
-image: 
+bio: "A lot of us are in this same boat. We Beleive nearly every problem in the world is already solved. It is just not written down."
+
+
+reading_time:     true
+words_per_minute: 200
+
+# Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
+# When testing locally leave blank or use http://localhost:4000
+url:
+
+# Social networking links used in footer. Update and remove as you like.
+disqus_shortname: nutshell-hack
+github:         Nutshell-Hack
+
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   
+
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+#permalink:   /:categories/:title/

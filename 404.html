@@ -1,0 +1,44 @@
+--- 
+title: 404 Page not found 
+body_class: page-error 
+---
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> {{page.title}}</title>
+    {% include meta.html %}
+    <link rel="stylesheet" type="text/css" href="./assets/css/caffeine-theme.css" />
+    {% include head-css.html %} {% include ghost_head.html %}
+</head>
+<body class="{{page.body_class}}">
+    <article>
+        <section>
+            <div class="error-body">
+                <h1>
+                    Whoops, looks like you're out of coffee... so <strong>404</strong> in yo' face!
+                </h1>
+                <hr class="divider short">
+                <h2>
+                    The page you were looking for has either been moved, deleted, or doesn't exist. Click <a href="/">here </a> or the button below to go back home.
+                </h2>
+                <div class="call-to-action-container">
+                    <nav class="navigation left">
+                        <ul class="links">
+                            <li class="nav-blog expanded">
+                                <a href="/" title="{{site.title}}">Take me home!</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </article>
+    {% include ghost_foot.html %}
+    <script src="./assets/js/caffeine-theme.js" type="text/javascript" charset="utf-8"></script>
+    <!--{% include google-analytics.html %} -->
+</body>
+
+</html>

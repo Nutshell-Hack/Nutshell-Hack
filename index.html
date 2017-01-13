@@ -1,145 +1,38 @@
----
+--- 
 layout: default 
 title: Home Page 
 body_class: home-template 
---- 
+---
 {% include material-cover.html %}
 
 <div class="page page-index container-wrapper">
     <ol class="posts">
+
+   {% for post in site.posts %}
         <li class="card">
             <div class="card-container">
                 <div class="card-body">
-                    <a href="/my-2016-year-in-review-with-data/" title="link to My 2016 Year in Review; with Data!">
-                <div class="material-cover " style="background-image: url(https://s3-us-west-2.amazonaws.com/caffeine-coding-bucket/2017/01open_notebook_computer_min-1483694955876.jpg)"></div>
-<div class="card-content">
-    <h2>My 2016 Year in Review; with Data!</h2>
-    <p class="description">I know it's 2017 and I'm technically like....5 days late to the party, but it's time to reflect on 2016. I don't mean
-        to discuss world events. It's been an extremely depressing year - lots of celebrity deaths, the world is constantly
-        under mass terror attacks, and the US&hellip;</p>
-</div>
-</a>
-</div>
-<div class="card-footer">
-    <div class="meta">
-        <time datetime="January 06, 2017">a day ago</time>
-        <span class="tags">on <a href="/tag/career/">Career</a> <a href="/tag/productivity/">Productivity</a> <a href="/tag/musings/">Musings</a> <a href="/tag/data/">Data</a></span>        - <a href="/my-2016-year-in-review-with-data/">Comments</a>
-    </div>
-    <div class="clear"></div>
-</div>
-</div>
-</li>
-<li class="card">
-    <div class="card-container">
-        <div class="card-body">
-            <a href="/developer-setup-2016/" title="link to My 2016 Developer Setup">
-                <div class="material-cover " style="background-image: url(https://s3-us-west-2.amazonaws.com/caffeine-coding-bucket/2016/11coding-1480300114009.jpg)"></div>
-<div class="card-content">
-    <h2>My 2016 Developer Setup</h2>
-    <p class="description">My busy holiday schedule has made it more difficult for me to find time to sit down and write, so this is the perfect
-        time for this post! This post is going to be a less technical, insightful, or "meaty", but it's relevant for a lot
-        of folks who've asked&hellip;</p>
-</div>
-</a>
-</div>
-<div class="card-footer">
-    <div class="meta">
-        <time datetime="November 27, 2016">a month ago</time>
-        <span class="tags">on <a href="/tag/productivity/">Productivity</a> <a href="/tag/front-end/">Front End</a></span>        - <a href="/developer-setup-2016/">Comments</a>
-    </div>
-    <div class="clear"></div>
-</div>
-</div>
-</li>
-<li class="card">
-    <div class="card-container">
-        <div class="card-body">
-            <a href="/becoming-a-true-full-stack-engineer/" title="link to Becoming a true Full-stack Engineer">
-                <div class="material-cover " style="background-image: url(https://s3-us-west-2.amazonaws.com/caffeine-coding-bucket/2016/10magazine_stacks-1477305180409.jpeg)"></div>
-<div class="card-content">
-    <h2>Becoming a true Full-stack Engineer</h2>
-    <p class="description">The other day I was browsing around on LinkedIn and I saw that more and more of my peers were labeling themselves as
-        full-stack engineers. Over the last several years I’ve been seeing a higher uptick of this moniker being used by
-        engineers to self-describe their abilities. For obvious&hellip;</p>
-</div>
-</a>
-</div>
-<div class="card-footer">
-    <div class="meta">
-        <time datetime="October 24, 2016">2 months ago</time>
-        <span class="tags">on <a href="/tag/musings/">Musings</a> <a href="/tag/career/">Career</a></span> - <a href="/becoming-a-true-full-stack-engineer/">Comments</a>
-    </div>
-    <div class="clear"></div>
-</div>
-</div>
-</li>
-<li class="card">
-    <div class="card-container">
-        <div class="card-body">
-            <a href="/why-intuit/" title="link to Why Intuit?">
-                <div class="material-cover " style="background-image: url(https://s3-us-west-2.amazonaws.com/caffeine-coding-bucket/2016/12intuit_studio_min-1480759174655.jpg)"></div>
-<div class="card-content">
-    <h2>Why Intuit?</h2>
-    <p class="description">Like many aspiring Software Engineers in college, I have searched for and have had the privilege to work for several
-        internships across various tech companies. All of this was done in service to hopefully landing a great career. Since....you
-        know, after I was done with school, I had to&hellip;</p>
-</div>
-</a>
-</div>
-<div class="card-footer">
-    <div class="meta">
-        <time datetime="September 09, 2016">4 months ago</time>
-        <span class="tags">on <a href="/tag/musings/">Musings</a> <a href="/tag/career/">Career</a></span> - <a href="/why-intuit/">Comments</a>
-    </div>
-    <div class="clear"></div>
-</div>
-</div>
-</li>
-<li class="card">
-    <div class="card-container">
-        <div class="card-body">
-            <a href="/universal-javascript-server-client-rendering/" title="link to Universal Javascript in Production - Server/Client Rendering">
-                <div class="material-cover " style="background-image: url(https://caffeine-coding-bucket.s3.amazonaws.com/2016/Aug/screen_share_min-1471343714110.jpg)"></div>
-<div class="card-content">
-    <h2>Universal Javascript in Production - Server/Client Rendering</h2>
-    <p class="description">This is a transcript of a talk I co-presented for Intuit's Front-end Engineering Conference. This is part two of a two
-        part post on Universal Javascript in Production. In my previous post, I discussed the journey of QuickBooks Financing
-        and why we decided to switch to Node.js as the&hellip;</p>
-</div>
-</a>
-</div>
-<div class="card-footer">
-    <div class="meta">
-        <time datetime="August 16, 2016">5 months ago</time>
-        <span class="tags">on <a href="/tag/javascript/">Javascript</a> <a href="/tag/front-end/">Front End</a> <a href="/tag/code/">Code</a> <a href="/tag/guide/">Guide</a></span>        - <a href="/universal-javascript-server-client-rendering/">Comments</a>
-    </div>
-    <div class="clear"></div>
-</div>
-</div>
-</li>
-<li class="card">
-    <div class="card-container">
-        <div class="card-body">
-            <a href="/universal-javascript-in-production-the-why/" title="link to Universal Javascript in Production - The Why">
-                <div class="material-cover " style="background-image: url(https://caffeine-coding-bucket.s3.amazonaws.com/2016/Jul/nodejs_logo_green_min-1468838336254.jpg)"></div>
-<div class="card-content">
-    <h2>Universal Javascript in Production - The Why</h2>
-    <p class="description">This is a transcript of a talk I co-presented for Intuit's Front-end Engineering Conference. This is part one of a two
-        part post on Universal Javascript in Production. Context setting At Intuit, I am a full stack engineer on a product
-        called QuickBooks Financing, which is a platform that provides&hellip;</p>
-</div>
-</a>
-</div>
-<div class="card-footer">
-    <div class="meta">
-        <time datetime="July 18, 2016">6 months ago</time>
-        <span class="tags">on <a href="/tag/javascript/">Javascript</a> <a href="/tag/front-end/">Front End</a></span> -
-        <a href="/universal-javascript-in-production-the-why/">Comments</a>
-    </div>
-    <div class="clear"></div>
-</div>
-</div>
-</li>
+                    <a href="{{post.url}}#open" title="link to {{post.title}}">
+                <div class="material-cover " style="background-image: url({{post.image_path}})"></div>
+        <div class="card-content">
+        <h2>{{post.title}}</h2>
+        <p class="description">{{post.description}} &hellip;</p>
+        </div>
+                    </a>
+        </div>
+        <div class="card-footer">
+        <div class="meta">
+        <time datetime="January 06, 2017">{{post.post_date}}</time>
+        <span class="tags">on <a href="/tag/career/">Career</a> <a href="/tag/productivity/">Productivity</a> <a href="/tag/musings/">Musings</a> <a href="/tag/data/">Data</a></span>
+                - <a href="{{post.url}}#open">Comments</a>
+        </div>
+        <div class="clear"></div>
+        </div>
+        </div>
+       </li>
+    {% endfor %}
+
+
 </ol>
 </div>
 
