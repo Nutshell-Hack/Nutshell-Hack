@@ -8,9 +8,10 @@ collections:
   uploads:
     title: Uploads
     output: true
-url: 
+url: http://nutshell-hack.github.io/
 cover: https://res.cloudinary.com/iglesk/image/upload/v1484570372/blog%20cover/Damas.jpg
 avatar: https://res.cloudinary.com/iglesk/image/upload/v1484571284/blog%20cover/favicon.png
+top-image: http://res.cloudinary.com/iglesk/image/upload/v1484579484/blog%20cover/damascus-old-cities.jpg
 description: Nutshell Hack is A Staccato Of Random Engineering thoughts, stories and
   ideas... <br>Snowballed Into A Single blog where we hope to share our notes, journey,
   and lessons with our fellow yuppies.

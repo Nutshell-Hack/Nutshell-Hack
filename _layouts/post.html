@@ -1,8 +1,8 @@
----
-layout: default
+--- 
+layout: default 
 ---
 
-  <article class="{{page.post_class}}">
+<article class="{{page.post_class}}">
     {% include material-cover.html %}
     <div class="post-card animated fade-in">
         <a id="back-button" href="{{site.url}}#open" title="Go back" class="hvr-grow">
@@ -13,22 +13,39 @@ layout: default
         <div class="post-container">
             <div class="post-header">
                 <div class="meta">
-                    <time datetime="{{page.post_date}}">{{ page.date | date: "%-d" }} days ago</time>
+                    <time id="showTime" datetime="{{page.date | date: " %-d %B %Y "}}"> </time>
                     <!--<span class="tags">{{tags prefix="in " separator=" "}}</span>-->
                     <span class="reading-time"> ~ <span></span> read.</span>
                 </div>
                 <h1 id="post-title">
-                   {{page.title}}
+                    {{page.title}}
                 </h1>
                 <div class="share">
                     {% include share.html %}
                 </div>
             </div>
-             <div class="post-content">
+            <div class="post-content">
                 {{content}}
             </div>
-           {% include comments.html %}
+            {% include comments.html %}
         </div>
     </div>
     {% include post-pagination.html %}
-  </article>
+</article>
+
+
+<script>  
+    var dates = { postDate: "{{page.date}}", todayDate: "{{site.time}}", };
+
+    var date1 = new Date(dates.postDate).getTime();
+    var date2 = new Date(dates.todayDate).getTime();
+
+    showDiff(date1, date2);
+
+    function showDiff(date1, date2) {
+        var oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+        var days = Math.round(Math.abs((date1 - date2) / (oneDay)));
+        document.getElementById("showTime").innerHTML = days + "  days ago.";
+        //      setTimeout(showDiff, 1000);
+    }
+</script>

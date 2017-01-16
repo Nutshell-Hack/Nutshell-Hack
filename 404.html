@@ -11,7 +11,7 @@ body_class: page-error
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title> {{page.title}}</title>
     {% include meta.html %}
-    <link rel="stylesheet" type="text/css" href="./assets/css/caffeine-theme.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/caffeine-theme.css" />
     {% include head-css.html %} {% include ghost_head.html %}
 </head>
 <body class="{{page.body_class}}">
@@ -19,7 +19,7 @@ body_class: page-error
         <section>
             <div class="error-body">
                 <h1>
-                    Whoops, looks like you're out of coffee... so <strong>404</strong> in yo' face!
+                    Whoops, looks like you're out of {{site.title}}... so <strong>404</strong> in yo' face!
                 </h1>
                 <hr class="divider short">
                 <h2>
@@ -38,7 +38,7 @@ body_class: page-error
         </section>
     </article>
     {% include ghost_foot.html %}
-    <script src="./assets/js/caffeine-theme.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/assets/js/caffeine-theme.js" type="text/javascript" charset="utf-8"></script>
     <!--{% include google-analytics.html %} -->
 </body>
 

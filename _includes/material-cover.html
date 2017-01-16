@@ -1,5 +1,7 @@
-{% if site.image %}
-<div class="material-cover animated fade-in" style="background-image: url({{site.image}})">
+{% if page.image_path %}
+<div class="material-cover animated fade-in" style="background-image: url({{page.image_path}})">
+{% elsif site.top-image != nil or site.top-image != blank or site.top-image != "" %}
+<div class="material-cover animated fade-in" style="background-image: url({{site.top-image}})">
 {% else %}
 <div class="material-cover" style="background-image: url({{site.cover}})">
 {% endif %}
