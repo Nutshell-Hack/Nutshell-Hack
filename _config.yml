@@ -9,8 +9,8 @@ collections:
     title: Uploads
     output: true
 url: 
-cover: https://s3-us-west-2.amazonaws.com/caffeine-coding-bucket/2016/11coffee_background_blur_min_1457314092921-1479086063660.jpg
-avatar: https://caffeine-coding-bucket.s3.amazonaws.com/2016/Mar/Kelvin_min-1457599406253.jpg
+cover: https://res.cloudinary.com/iglesk/image/upload/v1484570372/blog%20cover/Damas.jpg
+avatar: https://res.cloudinary.com/iglesk/image/upload/v1484571284/blog%20cover/favicon.png
 description: Nutshell Hack is A Staccato Of Random Engineering thoughts, stories and
   ideas... <br>Snowballed Into A Single blog where we hope to share our notes, journey,
   and lessons with our fellow yuppies.
