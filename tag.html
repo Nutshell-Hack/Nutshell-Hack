@@ -6,7 +6,12 @@ body_class: home-template
 
 {% include material-cover.html %}
 
-<div class="page page-index container-wrapper">
+<div class="page page-tag container-wrapper">
+    <div class="tag-header container-wrapper">
+        <div class="tags">
+            <a id="tago" href="/tag/"></a>
+        </div>
+    </div>
     <ol class="posts">
 
         {% for post in site.posts %}
@@ -24,8 +29,7 @@ body_class: home-template
 <div class="card-footer">
     <div class="meta">
         <time class="showTime" datetime="{{post.date | date_to_long_string}}">{{post.date}}</time>
-        <span class="tags">on &nbsp;{% for tag in post.tags %}<a href="/tag/{{tag}}/">{{tag}}</a> &nbsp;{% endfor %}</span>
-        - <a href="{{post.url}}#open">Comments</a>
+        <span class="tags">on &nbsp;{% for tag in post.tags %}<a href="/tag/{{tag}}/">{{tag}}</a> &nbsp;{% endfor %}</span>        - <a href="{{post.url}}#open">Comments</a>
     </div>
     <div class="clear"></div>
 </div>
@@ -35,6 +39,16 @@ body_class: home-template
 
 
 </ol>
+{% include pagination.html %}
 </div>
 
-{% include pagination.html %}
+
+<script>
+    function getUrl() {
+        var str = document.URL;
+        var tag = str.substring(str.lastIndexOf("/tag") + 5, str.lastIndexOf("#") - 1);
+        document.getElementById("tago").innerHTML = tag;
+        document.getElementById("tago").href = "/tag/"+tag;
+    }
+    getUrl();
+</script>

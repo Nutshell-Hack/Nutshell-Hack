@@ -13,8 +13,8 @@ layout: default
         <div class="post-container">
             <div class="post-header">
                 <div class="meta">
-                    <time id="showTime" datetime="{{page.date | date: " %-d %B %Y "}}"> </time>
-                    <!--<span class="tags">{{tags prefix="in " separator=" "}}</span>-->
+                    <time class="showTime" datetime="{{page.date | date: " %-d %B %Y "}}">{{page.date}} </time>
+                    <span class="tags">on &nbsp;{% for tag in page.tags %}<a href="/tag/{{tag}}/">{{tag}}</a> &nbsp;{% endfor %} </span>
                     <span class="reading-time"> ~ <span></span> read.</span>
                 </div>
                 <h1 id="post-title">
@@ -32,20 +32,3 @@ layout: default
     </div>
     {% include post-pagination.html %}
 </article>
-
-
-<script>  
-    var dates = { postDate: "{{page.date}}", todayDate: "{{site.time}}", };
-
-    var date1 = new Date(dates.postDate).getTime();
-    var date2 = new Date(dates.todayDate).getTime();
-
-    showDiff(date1, date2);
-
-    function showDiff(date1, date2) {
-        var oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
-        var days = Math.round(Math.abs((date1 - date2) / (oneDay)));
-        document.getElementById("showTime").innerHTML = days + "  days ago.";
-        //      setTimeout(showDiff, 1000);
-    }
-</script>
