@@ -1,6 +1,6 @@
 ---
-    
 ---
+
 var pageDates = document.getElementsByClassName("showTime");
 var pageDate = '';
 for (var i = 0; i < pageDates.length; i++) {
